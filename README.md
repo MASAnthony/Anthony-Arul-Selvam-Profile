@@ -29,8 +29,8 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 |----------|--------------|
 | **Frontend** | React, TypeScript, HTML5, CSS3 |
 | **Build Tool** | Vite |
-| **Styling** | Vanilla CSS (Variables, Flexbox, Grid) |
-| **Icons** | Emojis & CSS Shapes |
+| **Styling** | Tailwind CSS v4, PostCSS |
+| **Icons** | Emojis & Tailwind Utilities |
 
 ---
 
