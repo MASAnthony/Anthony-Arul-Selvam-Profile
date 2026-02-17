@@ -1,6 +1,7 @@
 # 👨‍💻 Anthony Arul Selvam - Portfolio
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -10,13 +11,14 @@
 
 ## 🚀 Overview
 
-Welcome to my personal portfolio codebase! This project showcases my skills, experience, and projects as a full-stack developer. It is built with **React** and **Vite**, featuring a modern dark theme and responsive design.
+Welcome to my personal portfolio codebase! This project showcases my skills, experience, and projects as a full-stack developer. It is built with **React**, **TypeScript**, and **Vite**, featuring a modern dark theme and responsive design.
 
 ### ✨ Key Features
 
 *   **🎨 Modern UI**: High-contrast dark theme with glassmorphism effects.
 *   **📱 Fully Responsive**: Optimized for generic mobile, tablet, and desktop views.
 *   **⚡ Fast Performance**: Powered by Vite for lightning-fast builds.
+*   **🛡️ Type Safety**: Built with TypeScript for robust and maintainable code.
 *   **🎭 Animated Sections**: Smooth scroll reveals and interactive elements.
 
 ---
@@ -25,7 +27,7 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 
 | Category | Technologies |
 |----------|--------------|
-| **Frontend** | React, HTML5, CSS3, JavaScript |
+| **Frontend** | React, TypeScript, HTML5, CSS3 |
 | **Build Tool** | Vite |
 | **Styling** | Vanilla CSS (Variables, Flexbox, Grid) |
 | **Icons** | Emojis & CSS Shapes |
@@ -38,9 +40,9 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 📦 src
  ┣ 📂 assets       # Static assets
  ┣ 📜 App.css      # Core styles & variables
- ┣ 📜 App.jsx      # Main application logic
+ ┣ 📜 App.tsx      # Main application logic
  ┣ 📜 index.css    # Global resets
- ┗ 📜 main.jsx     # Entry point
+ ┗ 📜 main.tsx     # Entry point
 ```
 
 ---
