@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent cursor-pointer" onClick={() => scrollToSection('home')}>
-          Anthony.dev
+          Anthony
         </div>
         
         <div className="md:hidden text-2xl cursor-pointer text-slate-100" onClick={toggleMenu}>
