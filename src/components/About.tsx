@@ -1,5 +1,5 @@
 import { portfolioData } from '../data/portfolio';
-import { Target, Lightbulb, Zap, Users, Trophy, Briefcase, Code, Smile } from 'lucide-react';
+import { Target, Lightbulb, Zap, Users } from 'lucide-react';
 import { Reveal } from './Reveal';
 
 const About = () => {
