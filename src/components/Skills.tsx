@@ -1,5 +1,7 @@
+import { portfolioData } from '../data/portfolio';
+
 const Skills = () => {
-    const skills = ['React', 'Angular', 'NodeJs', 'MongoDB', 'AI Integration', 'Postman', 'Git', 'HTML5', 'CSS3', 'JavaScript'];
+    const { skills } = portfolioData;
   
     return (
       <section id="skills" className="py-24 bg-slate-900">

@@ -20,6 +20,8 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 *   **⚡ Fast Performance**: Powered by Vite for lightning-fast builds.
 *   **🛡️ Type Safety**: Built with TypeScript for robust and maintainable code.
 *   **🎭 Animated Sections**: Smooth scroll reveals and interactive elements.
+*   **📍 Interactive Map**: Real-time location display using Leaflet. [NEW]
+*   **🆔 Custom Branding**: Unique "AS" logo and favicon. [NEW]
 
 ---
 
@@ -30,6 +32,7 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 | **Frontend** | React, TypeScript, HTML5, CSS3 |
 | **Build Tool** | Vite |
 | **Styling** | Tailwind CSS v4, PostCSS |
+| **Maps** | Leaflet, React Leaflet |
 | **Icons** | Emojis & Tailwind Utilities |
 
 ---
@@ -42,7 +45,10 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
  ┣ 📜 App.css      # Core styles & variables
  ┣ 📜 App.tsx      # Main application logic
  ┣ 📜 index.css    # Global resets
- ┗ 📜 main.tsx     # Entry point
+ ┣ 📜 main.tsx     # Entry point
+ ┗ 📂 components   # Reusable UI components
+    ┣ 📜 LocationMap.tsx # Interactive Map Component
+    ┗ ...
 ```
 
 ---
@@ -75,7 +81,7 @@ Welcome to my personal portfolio codebase! This project showcases my skills, exp
 
 *   **📧 Email**: [masanthony3a3@gmail.com](mailto:masanthony3a3@gmail.com)
 *   **💼 Profession**: Software Developer
-*   **📍 Location**: [Your Location]
+*   **📍 Location**: Sivakasi, Tamil Nadu
 
 ---
 
