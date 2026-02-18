@@ -1,4 +1,5 @@
 import { portfolioData } from '../data/portfolio';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Hero = () => {
     const { hero } = portfolioData;
@@ -6,6 +7,40 @@ const Hero = () => {
     return (
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100 via-[#F8FAFC] to-[#F8FAFC] pt-20">
         <div className="absolute w-[600px] h-[600px] bg-[#4F46E5]/5 rounded-full blur-[100px] -top-24 -right-24 pointer-events-none"></div>
+
+        {/* Left Side Contact Info */}
+        <div className="absolute left-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-8 z-20">
+           <div className="group flex flex-col items-center gap-2">
+              <div className="p-3 bg-white rounded-full shadow-md border border-slate-100 text-[#4F46E5] group-hover:scale-110 transition-transform">
+                <Mail size={20} />
+              </div>
+              <span className="vertical-text text-xs font-medium text-[#64748B] tracking-wider py-2 border-l border-slate-200 pl-2 hidden">Email</span>
+              <div className="absolute left-14 top-1 bg-white px-4 py-2 rounded-lg shadow-lg border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                 <p className="text-sm font-bold text-[#0F172A]">{portfolioData.personal.email}</p>
+                 <p className="text-xs text-[#64748B]">Email</p>
+              </div>
+           </div>
+
+           <div className="group flex flex-col items-center gap-2">
+              <div className="p-3 bg-white rounded-full shadow-md border border-slate-100 text-[#4F46E5] group-hover:scale-110 transition-transform">
+                <Phone size={20} />
+              </div>
+              <div className="absolute left-14 top-16 bg-white px-4 py-2 rounded-lg shadow-lg border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                 <p className="text-sm font-bold text-[#0F172A]">{portfolioData.personal.phone}</p>
+                 <p className="text-xs text-[#64748B]">Phone</p>
+              </div>
+           </div>
+
+           <div className="group flex flex-col items-center gap-2">
+              <div className="p-3 bg-white rounded-full shadow-md border border-slate-100 text-[#4F46E5] group-hover:scale-110 transition-transform">
+                <MapPin size={20} />
+              </div>
+              <div className="absolute left-14 bottom-1 bg-white px-4 py-2 rounded-lg shadow-lg border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                 <p className="text-sm font-bold text-[#0F172A]">Sivakasi, Tamil Nadu</p>
+                 <p className="text-xs text-[#64748B]">Location</p>
+              </div>
+           </div>
+        </div>
         
         <div className="relative z-10 text-center max-w-4xl px-4 mt-8 animate-fade-in-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight tracking-tight text-[#0F172A]">
