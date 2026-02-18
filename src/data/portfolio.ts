@@ -30,7 +30,17 @@ export const portfolioData = {
     },
     about: {
         title: "About Me",
-        description: "I am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative."
+        description: "I am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative.",
+        stats: {
+            experience: 2,
+            projects: 10,
+            clients: 5,
+            awards: 2
+        },
+        mission: "Transforming ideas into scalable solutions that impact millions of users",
+        vision: "Leading AI/ML innovation in fintech and healthcare domains",
+        approach: "Data-driven decision making with focus on business impact",
+        values: "Building and mentoring world-class engineering teams"
     },
     skills: [
         'React', 'Angular', 'NodeJs', 'MongoDB', 'AI Integration',
@@ -49,7 +59,7 @@ export const portfolioData = {
         }
     ],
     socials: [
-        { label: "GitHub", icon: Github, href: "https://github.com/Anthony-Arul-Selvam" },
+        { label: "GitHub", icon: Github, href: "https://github.com/MASAnthony?tab=repositories" },
         { label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/anthony-arul-selvam" },
         { label: "Email", icon: Mail, href: "mailto:masanthony3a3@gmail.com" },
     ],
@@ -59,7 +69,7 @@ export const portfolioData = {
         phone: "+91 8220620376",
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31487.625347318854!2d77.7785591!3d9.4542283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cf3096b7617b%3A0x633d45ca46285430!2sSivakasi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1716301211111!5m2!1sen!2sin",
         socials: [
-            { label: "GitHub", href: "https://github.com/Anthony-Arul-Selvam", icon: Github },
+            { label: "GitHub", href: "https://github.com/MASAnthony?tab=repositories", icon: Github },
             { label: "LinkedIn", href: "https://linkedin.com/in/anthony-arul-selvam", icon: Linkedin },
             { label: "Email", href: "mailto:masanthony3a3@gmail.com", icon: Mail },
         ]

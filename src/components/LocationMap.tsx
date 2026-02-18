@@ -2,7 +2,7 @@ import { portfolioData } from '../data/portfolio';
 
 const LocationMap = () => {
   return (
-    <div className="h-full w-full rounded-xl overflow-hidden shadow-lg border border-slate-700 z-0 relative bg-slate-800">
+    <div className="h-full w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 z-0 relative bg-slate-50">
       <iframe 
         src={portfolioData.contact.mapUrl} 
         width="100%" 
@@ -12,7 +12,7 @@ const LocationMap = () => {
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
         title="Location Map"
-        className="grayscale hover:grayscale-0 transition-all duration-500 opacity-80 hover:opacity-100"
+        className="transition-all duration-500 opacity-90 hover:opacity-100"
       ></iframe>
     </div>
   );
