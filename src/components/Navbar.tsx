@@ -17,11 +17,8 @@ const Navbar = () => {
           className="flex items-center gap-2 cursor-pointer group" 
           onClick={() => scrollToSection('home')}
         >
-          <div className="relative w-10 h-10 flex items-center justify-center bg-[#4F46E5] text-white rounded-xl shadow-lg shadow-[#4F46E5]/20 group-hover:scale-105 transition-all duration-300">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 stroke-current stroke-[2.5]">
-              <path d="M12 2L2 22H22L12 2Z" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M6 14H18" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <div className="relative w-10 h-10 flex items-center justify-center bg-[#4F46E5] text-white rounded-full shadow-lg shadow-[#4F46E5]/20 group-hover:scale-105 transition-all duration-300">
+            <span className="font-bold text-sm tracking-tighter">MAS</span>
           </div>
           <span className="text-xl font-bold text-[#0F172A] group-hover:text-[#4F46E5] transition-colors">Anthony</span>
         </div>

@@ -30,7 +30,17 @@ export const portfolioData = {
     },
     about: {
         title: "About Me",
-        description: "I am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative."
+        description: "I am flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative.",
+        stats: {
+            experience: 2,
+            projects: 10,
+            clients: 5,
+            awards: 2
+        },
+        mission: "Transforming ideas into scalable solutions that impact millions of users",
+        vision: "Leading AI/ML innovation in fintech and healthcare domains",
+        approach: "Data-driven decision making with focus on business impact",
+        values: "Building and mentoring world-class engineering teams"
     },
     skills: [
         'React', 'Angular', 'NodeJs', 'MongoDB', 'AI Integration',
@@ -49,7 +59,7 @@ export const portfolioData = {
         }
     ],
     socials: [
-        { label: "GitHub", icon: Github, href: "https://github.com/Anthony-Arul-Selvam" },
+        { label: "GitHub", icon: Github, href: "https://github.com/MASAnthony?tab=repositories" },
         { label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/anthony-arul-selvam" },
         { label: "Email", icon: Mail, href: "mailto:masanthony3a3@gmail.com" },
     ],
