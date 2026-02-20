@@ -40,12 +40,12 @@ const About = () => {
                         <span className="text-sm text-[#64748B] font-medium">Projects Built</span>
                     </div>
                     <div className="bg-[#F8FAFC] p-6 rounded-2xl border border-slate-100 text-center hover:shadow-md transition-shadow">
-                        <span className="text-3xl font-bold text-[#4F46E5] block mb-1">{about.stats?.clients}+</span>
-                        <span className="text-sm text-[#64748B] font-medium">Happy Clients</span>
+                        <span className="text-3xl font-bold text-[#4F46E5] block mb-1">{about.stats?.technologies}+</span>
+                        <span className="text-sm text-[#64748B] font-medium">Technologies Mastered</span>
                     </div>
                      <div className="bg-[#F8FAFC] p-6 rounded-2xl border border-slate-100 text-center hover:shadow-md transition-shadow">
-                        <span className="text-3xl font-bold text-[#4F46E5] block mb-1">{about.stats?.awards}+</span>
-                        <span className="text-sm text-[#64748B] font-medium">Awards Won</span>
+                        <span className="text-3xl font-bold text-[#4F46E5] block mb-1">{about.stats?.commits}+</span>
+                        <span className="text-sm text-[#64748B] font-medium">Code Commits</span>
                     </div>
                 </div>
               </Reveal>
