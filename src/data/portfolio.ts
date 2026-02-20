@@ -48,14 +48,19 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "DevPersona",
+            description: "An interactive and visually improved web application designed to analyze developer personalities. Features a seamless, responsive interface with a persistent light/dark theme switcher, smooth animations, and dynamic results.",
+            tags: ['React 19', 'Vite', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Framer Motion']
+        },
+        {
+            title: "CKYCRR Admin Portal",
+            description: "Core contributor to the development of the Central KYC Records Registry (CKYCRR) Admin Portal, managing KYC records and compliance. Designed comprehensive User Management with approval workflows and RBAC. Engineered a Content Management System for dynamic billing configurations and notification templates. Developed a secure IP Whitelisting module to ensure stringent security compliance.",
+            tags: ['React.js', 'TypeScript', 'Redux Toolkit', 'Material UI', 'RESTful API', 'Git']
+        },
+        {
             title: "Auth System",
             description: "A secure and scalable authentication system implementation featuring JWT tokens, password hashing, and role-based access control.",
             tags: ['Node.js', 'MongoDB', 'JWT', 'Express']
-        },
-        {
-            title: "Protean",
-            description: "Advanced web application solution with real-time data integration, complex state management, and an intuitive user interface.",
-            tags: ['React', 'API Integration', 'CSS Grid']
         }
     ],
     socials: [
