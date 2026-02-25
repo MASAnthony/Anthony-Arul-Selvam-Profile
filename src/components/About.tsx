@@ -6,14 +6,14 @@ const About = () => {
     const { about, personal } = portfolioData;
 
     return (
-      <section id="about" className="py-24 bg-white border-y border-slate-200/50 relative overflow-hidden">
+      <section id="about" className="py-8 bg-white border-y border-slate-200/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column: Profile & Quick Stats */}
             <div className="lg:col-span-5 relative z-10">
               <Reveal width="w-full">
-                <div className="relative mx-auto w-64 h-64 mb-8">
+                <div className="relative mx-auto w-64 h-64 mb-5">
                    <div className="absolute inset-0 bg-[#4F46E5] rounded-full blur-2xl opacity-20 animate-pulse"></div>
                    <div className="relative w-full h-full rounded-full bg-gradient-to-br from-[#4F46E5] to-[#4338ca] flex items-center justify-center p-1 shadow-xl">
                       <div className="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
@@ -25,7 +25,7 @@ const About = () => {
                    </div>
                 </div>
 
-                <div className="text-center mb-10">
+                <div className="text-center mb-6">
                     <h3 className="text-2xl font-bold text-[#0F172A] mb-2">{personal.name}</h3>
                     <p className="text-[#64748B] font-medium">{personal.role}</p>
                 </div>
@@ -58,7 +58,7 @@ const About = () => {
                     {about.title}
                   </h2>
                   
-                  <p className="text-lg text-[#334155] leading-relaxed mb-12">
+                  <p className="text-lg text-[#334155] leading-relaxed mb-8">
                      {about.description}
                   </p>
 
