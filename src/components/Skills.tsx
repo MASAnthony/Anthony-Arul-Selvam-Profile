@@ -1,9 +1,7 @@
-import { portfolioData } from '../data/portfolio';
+import { skillsData } from '../data/skills';
 import { Reveal } from './Reveal';
 
 const Skills = () => {
-    const { skills } = portfolioData;
-  
     return (
       <section id="skills" className="py-8 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-6">
@@ -15,7 +13,7 @@ const Skills = () => {
           </Reveal>
   
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {skills.map((skill, index) => (
+            {skillsData.map((skill, index) => (
               <Reveal key={skill} delay={index * 50} width="w-full">
                 <div 
                   className="bg-white hover:bg-[#4F46E5] p-6 rounded-xl border border-slate-200 shadow-sm text-center transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-[#4F46E5]/20 group cursor-default h-full flex items-center justify-center"
