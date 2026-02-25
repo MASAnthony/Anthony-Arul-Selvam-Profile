@@ -79,6 +79,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full shadow-md border border-slate-100 text-[#4F46E5] group-hover:scale-110 transition-transform block"
+                aria-label="GitHub Profile"
               >
                 <Github size={20} />
               </a>
