@@ -8,6 +8,14 @@ const About = () => {
     return (
       <section id="about" className="py-8 bg-white border-y border-slate-200/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
+          {/* Section heading lives above the grid so the DOM heading order is h1 → h2 → h3 */}
+          <Reveal width="w-full">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#0F172A] relative inline-block left-1/2 -translate-x-1/2">
+              {about.title}
+              <span className="absolute -bottom-3 left-0 w-full h-1 bg-[#4F46E5] rounded-full"></span>
+            </h2>
+          </Reveal>
+
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column: Profile & Quick Stats */}
@@ -26,8 +34,8 @@ const About = () => {
                 </div>
 
                 <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-[#0F172A] mb-2">{personal.name}</h3>
-                    <p className="text-[#64748B] font-medium">{personal.role}</p>
+                    <p className="text-2xl font-bold text-[#0F172A] mb-2">{personal.name}</p>
+                    <p className="text-[#475569] font-medium">{personal.role}</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -54,10 +62,6 @@ const About = () => {
             {/* Right Column: Bio & Values */}
             <div className="lg:col-span-7">
                <Reveal width="w-full" delay={200}>
-                  <h2 className="text-4xl lg:text-5xl font-bold text-[#0F172A] mb-8">
-                    {about.title}
-                  </h2>
-                  
                   <p className="text-lg text-[#334155] leading-relaxed mb-8">
                      {about.description}
                   </p>
@@ -66,7 +70,7 @@ const About = () => {
                       <div className="bg-[#eff6ff] p-6 rounded-2xl border border-[#dbeafe] hover:border-[#4F46E5]/30 transition-colors">
                           <div className="flex items-center gap-3 mb-3">
                               <Target className="text-[#4F46E5]" size={24} />
-                              <h4 className="font-bold text-[#0F172A]">Mission</h4>
+                              <h3 className="font-bold text-[#0F172A]">Mission</h3>
                           </div>
                           <p className="text-sm text-[#475569] leading-relaxed">{about.mission}</p>
                       </div>
@@ -74,7 +78,7 @@ const About = () => {
                       <div className="bg-[#eff6ff] p-6 rounded-2xl border border-[#dbeafe] hover:border-[#4F46E5]/30 transition-colors">
                           <div className="flex items-center gap-3 mb-3">
                               <Lightbulb className="text-[#eca121]" size={24} />
-                              <h4 className="font-bold text-[#0F172A]">Vision</h4>
+                              <h3 className="font-bold text-[#0F172A]">Vision</h3>
                           </div>
                           <p className="text-sm text-[#475569] leading-relaxed">{about.vision}</p>
                       </div>
@@ -82,7 +86,7 @@ const About = () => {
                        <div className="bg-[#eff6ff] p-6 rounded-2xl border border-[#dbeafe] hover:border-[#4F46E5]/30 transition-colors">
                           <div className="flex items-center gap-3 mb-3">
                               <Zap className="text-[#eab308]" size={24} />
-                              <h4 className="font-bold text-[#0F172A]">Approach</h4>
+                              <h3 className="font-bold text-[#0F172A]">Approach</h3>
                           </div>
                           <p className="text-sm text-[#475569] leading-relaxed">{about.approach}</p>
                       </div>
@@ -90,7 +94,7 @@ const About = () => {
                        <div className="bg-[#eff6ff] p-6 rounded-2xl border border-[#dbeafe] hover:border-[#4F46E5]/30 transition-colors">
                           <div className="flex items-center gap-3 mb-3">
                               <Users className="text-[#2DD4BF]" size={24} />
-                              <h4 className="font-bold text-[#0F172A]">Leadership</h4>
+                              <h3 className="font-bold text-[#0F172A]">Leadership</h3>
                           </div>
                           <p className="text-sm text-[#475569] leading-relaxed">{about.values}</p>
                       </div>
