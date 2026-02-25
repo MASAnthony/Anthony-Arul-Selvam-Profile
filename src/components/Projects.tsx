@@ -1,4 +1,4 @@
-import { portfolioData } from '../data/portfolio';
+import { projectsData } from '../data/projects';
 import { Reveal } from './Reveal';
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
           </Reveal>
   
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {portfolioData.projects.map((project, index) => (
+            {projectsData.map((project, index) => (
               <Reveal key={index} delay={index * 200} width="w-full">
                 <div className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#4F46E5]/30 transition-all group h-full">
                   <div className="p-8">

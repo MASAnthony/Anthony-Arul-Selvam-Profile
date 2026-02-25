@@ -1,10 +1,8 @@
-import { portfolioData } from '../data/portfolio';
+import { experienceData } from '../data/experience';
 import { Reveal } from './Reveal';
 import { Briefcase, Calendar, CheckCircle2 } from 'lucide-react';
 
 const Timeline = () => {
-    const { experience } = portfolioData;
-
     return (
         <section id="experience" className="py-8 bg-white border-y border-slate-200/50 overflow-hidden">
             <div className="max-w-5xl mx-auto px-6">
@@ -20,7 +18,7 @@ const Timeline = () => {
                     <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4F46E5] via-[#0891b2] to-transparent hidden md:block" />
 
                     <div className="flex flex-col gap-10">
-                        {experience.map((exp, index) => {
+                        {experienceData.map((exp, index) => {
                             const isLeft = index % 2 === 0;
                             return (
                                 <Reveal key={index} delay={index * 150} width="w-full">

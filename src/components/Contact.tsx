@@ -1,5 +1,6 @@
 import LocationMap from './LocationMap';
-import { portfolioData } from '../data/portfolio';
+import { personalData } from '../data/personal';
+import { contactData } from '../data/contact';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { Reveal } from './Reveal';
 
@@ -28,8 +29,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-[#64748B]">Email</p>
-                    <a href={`mailto:${portfolioData.personal.email}`} className="text-[#0F172A] hover:text-[#4F46E5] transition-colors font-medium">
-                      {portfolioData.personal.email}
+                    <a href={`mailto:${personalData.email}`} className="text-[#0F172A] hover:text-[#4F46E5] transition-colors font-medium">
+                      {personalData.email}
                     </a>
                   </div>
                 </div>
@@ -41,7 +42,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-[#64748B]">Location</p>
-                    <p className="text-[#0F172A] font-medium">{portfolioData.contact.location}</p>
+                    <p className="text-[#0F172A] font-medium">{contactData.location}</p>
                   </div>
                 </div>
 
@@ -61,7 +62,7 @@ const Contact = () => {
               <div>
                 <h4 className="text-lg font-semibold text-[#0F172A] mb-4">Socials</h4>
                 <div className="flex flex-wrap gap-4">
-                  {portfolioData.socials.map((social) => (
+                  {contactData.socials.map((social) => (
                     <a 
                       key={social.label}
                       href={social.href}

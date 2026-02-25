@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { portfolioData } from '../data/portfolio';
+import { contactData } from '../data/contact';
 import { MapPin } from 'lucide-react';
 
 const LocationMap = () => {
@@ -33,7 +33,7 @@ const LocationMap = () => {
           <div className="p-3 bg-[#EEF2FF] rounded-full">
             <MapPin size={28} className="text-[#4F46E5]" />
           </div>
-          <p className="text-sm font-medium">{portfolioData.contact.location}</p>
+          <p className="text-sm font-medium">{contactData.location}</p>
           {!isVisible && (
             <p className="text-xs text-[#94a3b8]">Scroll to view map</p>
           )}
@@ -46,7 +46,7 @@ const LocationMap = () => {
       {/* Only inject iframe src once the section is in viewport */}
       {isVisible && (
         <iframe
-          src={portfolioData.contact.mapUrl}
+          src={contactData.mapUrl}
           width="100%"
           height="100%"
           style={{ border: 0 }}

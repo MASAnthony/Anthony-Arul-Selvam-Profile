@@ -1,4 +1,5 @@
-import { portfolioData } from '../data/portfolio';
+import { heroData } from '../data/hero';
+import { personalData } from '../data/personal';
 import { Mail, Phone, MapPin, Github } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -33,7 +34,6 @@ const useTypingEffect = (words: string[], speed = 80, pause = 1800) => {
 };
 
 const Hero = () => {
-    const { hero } = portfolioData;
     const typedRole = useTypingEffect(roles);
 
     return (
@@ -48,7 +48,7 @@ const Hero = () => {
               </div>
               <span className="vertical-text text-xs font-medium text-[#64748B] tracking-wider py-2 border-l border-slate-200 pl-2 hidden">Email</span>
               <div className="absolute left-14 top-1 bg-white px-4 py-2 rounded-lg shadow-lg border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                 <p className="text-sm font-bold text-[#0F172A]">{portfolioData.personal.email}</p>
+                 <p className="text-sm font-bold text-[#0F172A]">{personalData.email}</p>
                  <p className="text-xs text-[#64748B]">Email</p>
               </div>
            </div>
@@ -58,7 +58,7 @@ const Hero = () => {
                 <Phone size={20} />
               </div>
               <div className="absolute left-14 top-16 bg-white px-4 py-2 rounded-lg shadow-lg border border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                 <p className="text-sm font-bold text-[#0F172A]">{portfolioData.personal.phone}</p>
+                 <p className="text-sm font-bold text-[#0F172A]">{personalData.phone}</p>
                  <p className="text-xs text-[#64748B]">Phone</p>
               </div>
            </div>
@@ -95,7 +95,7 @@ const Hero = () => {
 
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight tracking-tight text-[#0F172A]">
-            <span className="text-[#4F46E5] block mb-2">{hero.highlight}</span>
+            <span className="text-[#4F46E5] block mb-2">{heroData.highlight}</span>
             {/* Typing effect */}
             <span className="inline-block min-h-[1.2em]">
               {typedRole}
@@ -103,17 +103,17 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-[#374151] max-w-2xl mx-auto mb-10 leading-relaxed">
-            {hero.description}
+            {heroData.description}
           </p>
           <a 
-            href={hero.action.href}
+            href={heroData.action.href}
             onClick={(e) => { 
                 e.preventDefault(); 
-                document.getElementById(hero.action.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' }); 
+                document.getElementById(heroData.action.href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' }); 
             }}
             className="inline-block px-8 py-4 bg-[#4F46E5] hover:bg-[#4338ca] text-white font-semibold rounded-full shadow-lg shadow-[#4F46E5]/20 transition-all transform hover:-translate-y-1"
           >
-            {hero.action.text}
+            {heroData.action.text}
           </a>
         </div>
       </section>
