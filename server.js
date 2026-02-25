@@ -13,6 +13,22 @@ const DIST = path.join(__dirname, 'dist');
 const ROBOTS_TXT = `User-agent: *
 Allow: /
 
+# Block AI crawlers from using content for training
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
 Sitemap: https://anthonyarulselvam.in/sitemap.xml
 `;
 
