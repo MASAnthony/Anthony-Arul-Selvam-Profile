@@ -101,7 +101,7 @@ const Hero = () => {
               <span className="animate-pulse text-[#4F46E5]">|</span>
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-[#64748B] max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-[#374151] max-w-2xl mx-auto mb-10 leading-relaxed">
             {hero.description}
           </p>
           <a 
