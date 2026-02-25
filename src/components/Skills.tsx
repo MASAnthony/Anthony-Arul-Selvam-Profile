@@ -5,10 +5,10 @@ const Skills = () => {
     const { skills } = portfolioData;
   
     return (
-      <section id="skills" className="py-24 bg-[#F8FAFC]">
+      <section id="skills" className="py-8 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal width="w-full">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#0F172A] relative inline-block left-1/2 -translate-x-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#0F172A] relative inline-block left-1/2 -translate-x-1/2">
               Technical Skills
               <span className="absolute -bottom-3 left-0 w-full h-1 bg-[#4F46E5] rounded-full"></span>
             </h2>

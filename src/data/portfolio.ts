@@ -43,8 +43,10 @@ export const portfolioData = {
         values: "Building and mentoring world-class engineering teams"
     },
     skills: [
-        'React', 'Angular', 'NodeJs', 'MongoDB', 'AI Integration',
-        'Postman', 'Git', 'HTML5', 'CSS3', 'JavaScript'
+        'React.js', 'Angular', 'TypeScript', 'JavaScript',
+        'Node.js', 'NestJS', 'MongoDB', 'REST APIs',
+        'Redux Toolkit', 'Playwright', 'HTML5', 'CSS3',
+        'Git', 'Postman', 'Material UI'
     ],
     projects: [
         {
@@ -59,8 +61,13 @@ export const portfolioData = {
         },
         {
             title: "Auth System",
-            description: "A secure and scalable authentication system implementation featuring JWT tokens, password hashing, and role-based access control.",
-            tags: ['Node.js', 'MongoDB', 'JWT', 'Express']
+            description: "Developed and maintained a secure authentication platform consisting of Admin UI, User UI, Login UI, and Backend services. Rewrote Login UI to support legacy browsers and PowerShell environments. Implemented Multi-Factor Authentication (SMS/Email), FIDO authentication with QR code handling, webhook report APIs, login failure reports with pagination, and audit trail reporting. Configured breached password validation, CAPTCHA integration, bulk user creation via Excel upload, and secure token handling.",
+            tags: ['Angular', 'NestJS', 'MongoDB', 'JWT', 'MFA', 'FIDO', 'REST APIs']
+        },
+        {
+            title: "Playwright E-Commerce Test Automation Framework",
+            description: "Designed and built an end-to-end test automation framework for a live e-commerce/healthcare platform. Covers the complete user journey — from OTP-based login and address management to health package selection, order booking, and payment confirmation. Implemented Page Object Model (POM) with reusable page classes, custom Playwright fixtures for dependency injection, broken link & broken image detection utilities, and centralized test data management via testData.ts and .env. Configured Playwright HTML reporter alongside Ortoni Report for rich visual dashboards.",
+            tags: ['TypeScript', 'Playwright', 'Node.js', 'Ortoni Report', 'Dotenv']
         }
     ],
     socials: [
@@ -81,5 +88,32 @@ export const portfolioData = {
     },
     footer: {
         copyright: `© ${new Date().getFullYear()} Anthony Arul Selvam. All rights reserved.`
-    }
+    },
+    experience: [
+        {
+            role: "Frontend Developer",
+            company: "Skillmine Technology Consulting",
+            duration: "Jan 2023 – Present",
+            type: "Full-time",
+            highlights: [
+                "Built the CKYCRR Admin Portal — KYC record management with RBAC & approval workflows",
+                "Engineered a CMS for dynamic billing configurations & notification templates",
+                "Developed a secure IP Whitelisting module for stringent security compliance",
+                "Integrated RESTful APIs and managed complex state with Redux Toolkit"
+            ],
+            color: "#4F46E5"
+        },
+        {
+            role: "Trainee Software Developer",
+            company: "Skillmine Technology Consulting",
+            duration: "Jul 2022 – Dec 2022",
+            type: "Internship",
+            highlights: [
+                "Learned React.js, TypeScript fundamentals and modern component patterns",
+                "Worked on UI prototypes and contributed to internal tooling",
+                "Collaborated with senior developers on agile sprints"
+            ],
+            color: "#0891b2"
+        }
+    ]
 };

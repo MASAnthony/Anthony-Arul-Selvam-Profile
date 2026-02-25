@@ -3,10 +3,10 @@ import { Reveal } from './Reveal';
 
 const Projects = () => {
     return (
-      <section id="projects" className="py-24 bg-white border-y border-slate-200/50">
+      <section id="projects" className="py-8 bg-white border-y border-slate-200/50">
         <div className="max-w-7xl mx-auto px-6">
           <Reveal width="w-full">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-[#0F172A] relative inline-block left-1/2 -translate-x-1/2">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#0F172A] relative inline-block left-1/2 -translate-x-1/2">
               Featured Projects
               <span className="absolute -bottom-3 left-0 w-full h-1 bg-[#4F46E5] rounded-full"></span>
             </h2>
