@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 export const contactData = {
     email: "masanthony3a3@gmail.com",
@@ -8,6 +8,7 @@ export const contactData = {
     socials: [
         { label: "GitHub", href: "https://github.com/MASAnthony?tab=repositories", icon: Github },
         { label: "LinkedIn", href: "https://linkedin.com/in/anthony-arul-selvam", icon: Linkedin },
+        { label: "Instagram", href: "https://www.instagram.com/mas_anthony15", icon: Instagram },
         { label: "Email", href: "mailto:masanthony3a3@gmail.com", icon: Mail },
     ]
 };
