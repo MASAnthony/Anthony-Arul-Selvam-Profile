@@ -5,10 +5,10 @@ export const experienceData = [
         duration: "Jan 2026 – Present",
         type: "Full-time",
         highlights: [
-            "Built the CKYCRR Admin Portal — KYC record management with RBAC & approval workflows",
-            "Engineered a CMS for dynamic billing configurations & notification templates",
-            "Developed a secure IP Whitelisting module for stringent security compliance",
-            "Integrated RESTful APIs and managed complex state with Redux Toolkit"
+            "Leading development of the CKYCRR Admin Portal, implementing robust Role-Based Access Control (RBAC) and complex approval workflows.",
+            "Architected a scalable Content Management System (CMS) for dynamic billing and multi-channel notification templating.",
+            "Implemented a high-security IP Whitelisting module to meet strict financial compliance standards.",
+            "Spearheaded the integration of complex RESTful APIs with Redux Toolkit for optimized state management."
         ],
         color: "#4F46E5"
     },
@@ -18,9 +18,9 @@ export const experienceData = [
         duration: "Jul 2022 – Dec 2022",
         type: "Internship",
         highlights: [
-            "Learned React.js, TypeScript fundamentals and modern component patterns",
-            "Worked on UI prototypes and contributed to internal tooling",
-            "Collaborated with senior developers on agile sprints"
+            "Mastered React.js and TypeScript fundamentals, applying modern component patterns to real-world scenarios.",
+            "Collaborated with cross-functional teams in Agile sprints to deliver high-quality UI prototypes.",
+            "Contributed to internal developer tooling, improving team productivity and code consistency."
         ],
         color: "#0891b2"
     }
