@@ -32,7 +32,7 @@ const LazySection = ({ children, id, minHeight = "400px" }: { children: React.Re
   }, [id]);
 
   return (
-    <div ref={ref} id={id} style={{ minHeight: hasBeenInView ? 'auto' : minHeight }}>
+    <div ref={ref} id={id} style={{ minHeight }}>
       {hasBeenInView && <Suspense fallback={null}>{children}</Suspense>}
     </div>
   );
@@ -60,7 +60,7 @@ function App() {
         <LazySection id="contact" minHeight="600px">
           <Contact />
         </LazySection>
-        <LazySection id="footer" minHeight="200px">
+        <LazySection id="footer" minHeight="100px">
           <Footer />
         </LazySection>
       </main>

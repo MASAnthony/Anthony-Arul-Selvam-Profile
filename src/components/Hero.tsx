@@ -97,7 +97,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight tracking-tight text-[#0F172A]">
             <span className="text-[#4F46E5] block mb-2">{heroData.highlight}</span>
             {/* Typing effect */}
-            <span className="inline-block min-h-[1.2em]">
+            <span className="inline-block min-h-[1.2em] min-w-[300px]">
               {typedRole}
               <span className="animate-pulse text-[#4F46E5]">|</span>
             </span>
