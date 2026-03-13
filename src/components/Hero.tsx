@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 const roles = ['Software Developer', 'React Specialist', 'UI Engineer', 'Frontend Craftsman'];
 
 const useTypingEffect = (words: string[], speed = 80, pause = 1800) => {
-  const [displayed, setDisplayed] = useState('');
   const [wordIdx, setWordIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
@@ -22,15 +21,16 @@ const useTypingEffect = (words: string[], speed = 80, pause = 1800) => {
     } else if (deleting && charIdx > 0) {
       timeout = setTimeout(() => setCharIdx(c => c - 1), speed / 2);
     } else {
-      setDeleting(false);
-      setWordIdx(i => (i + 1) % words.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setWordIdx(i => (i + 1) % words.length);
+      }, speed);
     }
 
-    setDisplayed(current.slice(0, charIdx));
     return () => clearTimeout(timeout);
   }, [charIdx, deleting, wordIdx, words, speed, pause]);
 
-  return displayed;
+  return words[wordIdx].slice(0, charIdx);
 };
 
 const Hero = () => {
