@@ -2,7 +2,7 @@ export const experienceData = [
     {
         role: "Frontend Developer",
         company: "Skillmine Technology Consulting",
-        duration: "Jan 2023 – Present",
+        duration: "Jan 2026 – Present",
         type: "Full-time",
         highlights: [
             "Built the CKYCRR Admin Portal — KYC record management with RBAC & approval workflows",

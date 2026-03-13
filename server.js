@@ -10,7 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DIST = path.join(__dirname, 'dist');
 
-const ROBOTS_TXT = `User-agent: *
+const ROBOTS_TXT = `# Allow all search engines
+User-agent: *
 Allow: /
 
 # Block AI crawlers from using content for training
