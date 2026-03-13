@@ -24,7 +24,7 @@ const LazySection = ({ children, id, minHeight = "400px" }: { children: React.Re
           observer.disconnect();
         }
       },
-      { rootMargin: '100px' } // Load a bit early
+      { rootMargin: '200px' } // Load a bit earlier for smoother transition
     );
 
     if (ref.current) observer.observe(ref.current);
