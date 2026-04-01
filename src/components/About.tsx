@@ -24,19 +24,9 @@ const About = () => {
                    <div className="absolute inset-0 bg-[#4F46E5] rounded-full blur-2xl opacity-20 animate-pulse"></div>
                    <div className="relative w-full h-full rounded-full bg-gradient-to-br from-[#4F46E5] to-[#4338ca] flex items-center justify-center p-1 shadow-xl">
                       <div className="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
-                        {/* Placeholder for user image if available, using initials for now */}
-                        {personalData.avatar ? (
-                          <img 
-                            src={personalData.avatar} 
-                            alt={personalData.name} 
-                            className="w-full h-full object-cover"
-                            style={{ objectPosition: 'center 20%' }}
-                          />
-                        ) : (
-                          <span className="text-6xl font-bold text-[#4F46E5]">
-                              {personalData.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                          </span>
-                        )}
+                        <span className="text-6xl font-bold text-[#4F46E5]">
+                            AA
+                        </span>
                       </div>
                    </div>
                 </div>
