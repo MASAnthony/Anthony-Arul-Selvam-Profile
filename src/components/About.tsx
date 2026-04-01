@@ -29,7 +29,8 @@ const About = () => {
                           <img 
                             src={personalData.avatar} 
                             alt={personalData.name} 
-                            className="w-full h-full object-cover object-top"
+                            className="w-full h-full object-cover"
+                            style={{ objectPosition: 'center 20%' }}
                           />
                         ) : (
                           <span className="text-6xl font-bold text-[#4F46E5]">
