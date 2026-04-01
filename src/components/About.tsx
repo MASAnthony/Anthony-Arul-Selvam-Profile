@@ -25,16 +25,31 @@ const About = () => {
                    <div className="relative w-full h-full rounded-full bg-gradient-to-br from-[#4F46E5] to-[#4338ca] flex items-center justify-center p-1 shadow-xl">
                       <div className="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center">
                         {/* Placeholder for user image if available, using initials for now */}
-                        <span className="text-6xl font-bold text-[#4F46E5]">
-                            {personalData.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                        </span>
+                        {personalData.avatar ? (
+                          <img 
+                            src={personalData.avatar} 
+                            alt={personalData.name} 
+                            className="w-full h-full object-cover"
+                            style={{ objectPosition: 'center 20%' }}
+                          />
+                        ) : (
+                          <span className="text-6xl font-bold text-[#4F46E5]">
+                              {personalData.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                          </span>
+                        )}
                       </div>
                    </div>
                 </div>
 
                 <div className="text-center mb-6">
-                    <p className="text-2xl font-bold text-[#0F172A] mb-2">{personalData.name}</p>
-                    <p className="text-[#475569] font-medium">{personalData.role}</p>
+                    <p className="text-2xl font-bold text-[#0F172A] mb-1">{personalData.name}</p>
+                    <p className="text-[#4F46E5] font-semibold mb-2">{personalData.role}</p>
+                    <div className="flex items-center justify-center gap-3 text-sm text-[#64748B]">
+                        <span className="flex items-center gap-1">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            {personalData.location}
+                        </span>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">

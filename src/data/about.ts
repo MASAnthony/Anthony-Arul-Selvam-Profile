@@ -1,11 +1,11 @@
 export const aboutData = {
     title: "About Me",
-    description: "I am a dedicated Software Developer with over 2 years of experience in crafting high-performance, scalable web applications. My expertise is primarily in React.js and TypeScript, where I focus on building intuitive, user-centric interfaces and managing complex state with precision. I excel at translating complex business requirements into robust technical solutions that drive business value.",
+    description: "I'm a passionate Software Developer dedicated to building high-performance, scalable web applications that deliver exceptional user experiences. With over 2 years of professional experience, I specialize in the React ecosystem and TypeScript, turning complex challenges into elegant, efficient, and maintainable code. My mission is to bridge the gap between sophisticated business logic and intuitive digital interfaces, ensuring every project I touch is both technically robust and user-friendly.",
     stats: {
         experience: 2,
-        projects: 10,
-        technologies: 15,
-        commits: 1000
+        projects: 12,
+        technologies: 18,
+        commits: "1.2k"
     },
     mission: "Architecting high-impact, scalable solutions that solve real-world problems for global users.",
     vision: "Leading innovation in Fintech and Healthcare through advanced UI/UX and stable engineering.",
