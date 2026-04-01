@@ -1,5 +1,34 @@
 export const projectsData = [
     {
+        title: "Expense Tracker with Smart Insights",
+        description: "A modern full-stack personal finance dashboard that helps users track expenses, manage monthly salary, and gain actionable financial insights through interactive visualizations.",
+        tags: ['React', 'NestJS', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Recharts'],
+        detailedDescription: "The Expense Tracker with Smart Insights is a full-stack web application designed to help users manage their personal finances effectively. It goes beyond basic tracking by introducing a salary-based financial analysis system. Users can set their monthly income, log expenses, and visualize their spending behavior through an intuitive dashboard.",
+        features: [
+            "Add, edit, and delete expenses",
+            "Categorize expenses (Food, Travel, Bills, etc.)",
+            "Monthly salary setup",
+            "Real-time dashboard updates",
+            "Total expenses vs income tracking",
+            "Net savings and savings rate (%) calculation",
+            "Category-wise spending breakdown",
+            "Daily and monthly trends visualizations"
+        ],
+        techStack: {
+            frontend: ['React (Vite)', 'TypeScript', 'Tailwind CSS', 'Recharts'],
+            backend: ['NestJS', 'MongoDB (Mongoose)']
+        },
+        workflow: [
+            "User sets monthly salary",
+            "Adds daily expenses which are stored in MongoDB via NestJS API",
+            "Dashboard calculates real-time insights (Total expenses, Savings, Trends)",
+            "Insights are visualized using interactive charts and summary cards"
+        ],
+        keyConcepts: ['REST API development', 'Component-based architecture', 'State management', 'Data aggregation and analytics'],
+        specialFeatures: 'Salary-based insights (not just basic CRUD), clean fintech-style UI, real-world utility.',
+        futureEnhancements: ['User authentication (JWT)', 'Budget alerts', 'Export reports (PDF/Excel)', 'AI-based financial suggestions']
+    },
+    {
         title: "DevPersona",
         description: "An interactive and visually improved web application designed to analyze developer personalities. Features a seamless, responsive interface with a persistent light/dark theme switcher, smooth animations, and dynamic results.",
         tags: ['React 19', 'Vite', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Framer Motion']
